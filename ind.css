@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0%;
+ 
+}
+body{
+    background-color: #f1f2f4;
+    /* padding: 10px; */
+    height: 100vh;
+    
+}
+
+.navbar{
+    flex: 1;
+    display: flex;
+    background-color: white;
+    padding: 10px 0%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 0px;
+}
+#check{
+    display: none;
+}
+.header .icons {
+    color: black;
+    font-size: 2.8rem;
+    position: absolute;
+    right: 5%;
+
+    /* click cheyaan pattummnn ariyan cursor pointer */
+
+    cursor: pointer;
+    display: none;
+    margin-top: -23px;
+    
+}
+
+
+.close-icon{
+    
+    color: black;
+    font-size: 2.8rem;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    display: none !important;
+    margin-top: -23px;
+    
+    
+
+}
+.searchbar{
+    background-color: #f0f5ff;
+    flex: 1;
+    display: flex;
+    
+    align-items: center;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.searchbar>input[type="search"]{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 100;
+    /* height: 40px;
+    width: 100%; */
+
+}
+/*chat scroller */
+
+
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100% ;
+    max-width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #333;
+}
+
+/* Keyframes for slide animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+   
+    100% { transform: translateX(-100%); }
+    0% { transform: translateX(0); }
+   
+    100% { transform: translateX(-100%); }
+}
+
+/* For automatic sliding, uncomment the following */
+.carousel-images {
+    animation: slide 2s infinite;
+}
+
+
+
+/* navbar links */
+.links{
+    flex: 1;
+    display: flex;
+    gap: 5px;
+}
+.links>a{
+    padding: 10px 20px;
+    display: flex;
+
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: black;
+}
+.active:hover{
+    background-color: #2874f0;
+    border-radius: 10px;
+    color: white;
+}
+.categories{
+    background-color: white;
+    margin: 10px 5px;
+    padding: 10px 10%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.cat-card{
+    /* width: 10%; */
+    flex: 1;
+    height: auto;
+    text-align: center;
+
+}
+.cat-card>h4{
+    font-family: sans-serif;
+    font-size: 14px;
+    /* 2lineil verunna textine oru linil akkan text-wrap */
+    text-wrap: nowrap;
+    font-weight: 600;
+    /* margin-top: -10px; */
+    color: rgb(52, 51, 51);
+    
+}
+/* .banner>img{
+    width: 97.5%;
+    margin: 10px 20px;
+    left: 10px;
+    background-color: white;
+    justify-content: center;
+} */
+/* dfghjk */
+/* sdfghjk */
+/* hjkl */
+/* sadfghjk */
+.slidercontainer{
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider{
+    height: 220px;
+    width: 100%;
+    /* background-image: url(slider3.webp);
+    background-image: url(slider2.webp);
+    background-image: url(slider1.webp); */
+    position: relative;
+}
+
+.slidericon{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sileft{
+    height: 88px;
+    width: 40px;
+    color: #8B8B8B;
+    background-color:white ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.siright{
+    height: 88px;
+    width: 40px;
+    color: #8B8B8B;
+    background-color:white ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ============================================= */
+
+
+
+.productsectin1{
+    height: 345px;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.psright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.psright img{
+    height: 320px;
+    width: 210px;
+    
+}
+
+.psleft{
+    height: 100%;
+    width: 1100px;
+    background-color: white;
+}
+
+.productheader{
+    height: 80px;
+    width: 111%;
+    padding: 0px 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.productheader h3{
+    color: #212121;
+}
+.productheader i{
+    height: 24px;
+    width: 24px;
+    color: white;
+    background-color: #1c41dc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.product{
+    height: 253px;
+    width: 198px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px groove #bdbdbd;
+    border-radius: 3px;
+    margin: 0px 12px;
+}
+.product img{
+    height: 150px;
+    width: 185px;
+    padding: 0px 10px;
+}
+
+.productinfo{
+    text-align: center;
+    margin-top: 30px;
+}
+.productinfo p{
+    font-size: 0.9rem;
+    
+}
+.productinfo h5{
+    color: #212121;
+    margin-top: 5px;
+}
+
+.productgroup{
+    display: flex;
+   overflow: hidden;
+   position: relative;
+}
+
+.productiright{
+    position: absolute;
+    height: 88px;
+    width: 40px;
+    background-color:white ;
+    color: #8B8B8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 32%;
+    right: 0;
+    -webkit-box-shadow: -2px 0px 3px 1px rgba(222, 222, 222, 1);
+-moz-box-shadow: -2px 0px 3px 1px rgba(222, 222, 222, 1);
+box-shadow: -2px 0px 3px 1px rgba(222, 222, 222, 1);
+}
+
+/* ===================================================== */
+
+
+
+
+
+
+.productsectin2{
+    height: 345px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.psleft2{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+
+
+/* ========================== */
+
+.branddirectory{
+    height: 570px;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 20px;
+    color: #565656; 
+    background-color: #eeeeee;
+}
+.linkheader{
+    padding-left: 15px;
+}
+
+.directorylink{
+    margin-top: 15px;
+    padding-left: 15px;
+    
+}
+
+.directorylink span{
+    font-size: 0.9rem;
+}
+.directorylink a{
+    font-size: 0.8rem;
+    color: #565656; 
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* =========================================== */
+footer{
+    height: 320px;
+    width: 100%;
+    margin: auto;
+    background-color: #212121;
+}
+
+.footpara{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+.footparainfo{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: 600;
+    gap: 5px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    
+    
+}
+.fc{
+    color: #878787;
+}
+
+.footparahead p{
+    font-size: 0.8rem;
+    color: #878787;
+    font-family: sans-serif;
+    
+}
+
+.footparainfo a{
+    color: white;
+    text-decoration: none;
+}
+.footparainfo a:hover{
+    text-decoration: underline;
+}
+
+/* .footerdiv{
+    height: 170px;
+    width: 1px;
+    border: 1px groove #4c4c4c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* -------------------------------------------------------- */
+
+.footerbtm{
+    height: 70px;
+    width: 100%;
+    border-top: 1px groove #454D5E;
+}
+
+.footbtmgroup{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0px 30px;
+}
+
+@media(max-width:780px){
+    .navbar{
+       position: relative;
+
+       top:100%;
+       width: 100%;
+       left:0;
+      
+    }
+    .searchbar{
+        display: none;
+    }
+    .categories{
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+
+    .header .icons{
+        display: block;
+    }
+    #check:checked~.navbar{
+        display: block;
+        
+    }
+    #check:checked~label .icons{
+        display: none;
+        
+    }
+    #check:checked~label .close-icon{
+        display: block !important;
+        
+    }
+    .cat{
+        display: none;
+    }
+    .more{
+        margin-left: -35px;
+    }
+}
+    /* max-width: ; */
+     
+
+    
